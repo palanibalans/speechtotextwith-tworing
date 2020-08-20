@@ -1,59 +1,25 @@
-<!doctype html>
-	<head>
-		<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="long-press-event.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="test.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="index.css">
-		<style>
-			/* CSS comes here */
-			body {
-			    font-family: arial;
-				background-image:url("background.webp");
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: center;
-			}
-			button {
-			    padding:10px;
-			    background-color:#6a67ce;
-			    color: #FFFFFF;
-			    border: 0px;
-			    cursor:pointer;
-			    border-radius: 5px;
-			}
-			#output {
-			    background-color:#F9F9F9;
-			    padding:10px;
-			    width: 100%;
-			    margin-top:20px;
-			    line-height:30px;
-			}
-			.hide {
-			    display:none;
-			}
-			.show {
-			    display:block;
-			}
-		</style>
-		<title>JavaScript Speech to Text</title>
-	</head>
-	<body>
-	
-		<center>
-		<div >
-		<img src="chestmicon.gif" class="d-flex justify-content-center" id="imgClickAndChange" onmousedown="mouseDown()" onmouseup="mouseUp()" style= "height:20%; width:20%"/> 
-
+</head>
+<body>
+	<div class="ab">
+		<img src="chestmicon.gif" id="imgClickAndChange" class="rounded mx-auto d-block img" onmousedown="mouseDown()" onmouseup="mouseUp()"  /> 
+		
        &nbsp; <span id="action"  ></span></p>
         <div id="output" class="hide"></div>
 		<br>
-		<br></div>
+		<br>
 		
-		<script>
+	</div>
+	<script>
 			/* JS comes here */
 			function mouseUp() {
 			console.log('Speech recognition aborted.');
@@ -71,7 +37,7 @@
 			
 			function mouseDown() {
 			
-                 document.getElementById("imgClickAndChange").src = "2ring Listening.gif";
+                
 				 var output = document.getElementById("output");
 		        // get action element reference
 		        var action = document.getElementById("action");
@@ -107,6 +73,5 @@
 		    
             
 		</script>
-		
-	</body>
+</body>
 </html>
