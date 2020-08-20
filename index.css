@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+
+/*--- navigation bar ---*/
+/*-- navigation bar color ---*/
+.navbar {
+  background:rgb(51, 153, 255);  /*-- back ground color is blue -(rgb) ---*/
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;     /*-- color text in the menu before mouse get piont ---*/
+  cursor: pointer;
+    /*-- mouse get piont over he menu in the navigation bar --*/
+}
+
+.nav-link {
+  margin-right: 3em !important;
+}
+
+.nav-link:hover {
+  color: black;  /* -- file get hover when the mouse piont over the menu bar --*/
+}
+
+.navbar-collapse {
+  justify-content: flex-end;  /* -- design of the menu in the line --*/
+}
+
+/* -- seting background image for the website --*/
+.header {
+  background-image: url('header-background-image.png');  /* setting the image for the background name of image is header-background -image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* making the background extra stylish for looking */
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description { /* styling the description */
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 { /* color for the welome to learn AI */
+  color: #6ab446; 
+}
+.description p { /* color for the description */
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.description button {
+  border:1px solid #6ab446; /* style of the MBLOCK */
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+.description button:hover { /* style of the button makeing hover */
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  width: 75%;
+  height: 75%;
+}
+.page-footer {   /* footer stylish */
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
