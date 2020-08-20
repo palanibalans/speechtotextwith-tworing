@@ -1,0 +1,42 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image:url("background.webp");
+	font-family: arial;
+	}
+			button {
+			    padding:10px;
+			    background-color:#6a67ce;
+			    color: #FFFFFF;
+			    border: 0px;
+			    cursor:pointer;
+			    border-radius: 5px;
+			}
+			#output {
+			    background-color:#F9F9F9;
+			    padding:10px;
+			    width: 100%;
+			    margin-top:20px;
+			    line-height:30px;
+			}
+			.hide {
+			    display:none;
+			}
+			.show {
+			    display:block;
+			}
+			
+
+.img{
+	width:75%;
+	height:75%;
+}			
